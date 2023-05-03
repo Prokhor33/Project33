@@ -1,0 +1,10 @@
+"""
+
+Узнать у пользователя число n. Найти сумму чисел n + nn + nnn.
+Например, пользователь ввел число 3. Считаем 3 + 33 + 333 = 369
+"""
+
+convert = lanbda x, n: int(str(x) * n)
+
+num = int(input("Please enter number: "))
+print(num + conver(num, 2) + convert(num, 3))
